@@ -92,52 +92,61 @@ Estrutura conceitual:
                     ┌──────────────────────┐
                     │     PostgreSQL       │
                     └──────────────────────┘
-					
-					Essa abordagem facilita:
+```
 
-manutenção;
-testes;
-baixo acoplamento;
-separação de responsabilidades;
-evolução da aplicação;
-substituição de tecnologias externas.
-Funcionalidades
+Essa abordagem facilita:
+
+- manutenção;
+- testes;
+- baixo acoplamento;
+- separação de responsabilidades;
+- evolução da aplicação;
+- substituição de tecnologias externas.
+
+---
+
+# Funcionalidades
 
 A aplicação disponibiliza operações para gerenciamento de usuários.
 
 Principais funcionalidades:
 
-Cadastro de usuário
-Consulta de usuário por ID
-Consulta de usuários por origem
-Exclusão de usuário
-Validação dos dados de entrada
-Tratamento de exceções
-Autenticação HTTP Basic
-Documentação da API através do Swagger/OpenAPI
+- Cadastro de usuário
+- Consulta de usuário por ID
+- Consulta de usuários por origem
+- Exclusão de usuário
+- Validação dos dados de entrada
+- Tratamento de exceções
+- Autenticação HTTP Basic
+- Documentação da API através do Swagger/OpenAPI
+
+---
 
 # Swagger / OpenAPI
 
-A API possui documentação interativa utilizando Swagger/OpenAPI.
+A API possui documentação interativa utilizando **Swagger/OpenAPI**.
 
 Após iniciar a aplicação, acesse:
 
 ### Swagger UI
 
-http://localhost:8080/swagger-ui/index.html
+`http://localhost:8080/swagger-ui/index.html`
 
 ### OpenAPI JSON
 
-http://localhost:8080/v3/api-docs
+`http://localhost:8080/v3/api-docs`
 
-## Autenticação
+---
 
-Os endpoints da API utilizam HTTP Basic Authentication.
+# Autenticação
+
+Os endpoints da API utilizam **HTTP Basic Authentication**.
 
 Para realizar os testes pelo Swagger, clique no botão **Authorize** e utilize as credenciais padrão do ambiente local:
 
-Usuário: admin  
+```text
+Usuário: admin
 Senha: admin123
+```
 
 Após a autenticação, os endpoints poderão ser executados diretamente pela interface do Swagger.
-

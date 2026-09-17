@@ -26,4 +26,8 @@ public class TipoUsuario {
 
     @Column(name = "descr", nullable = false, length = 100)
     private String descricao;
+
+    public String obterDescricaoCompleta() {
+        return origem + " - " + descricao;
+    }
 }

@@ -144,9 +144,10 @@ public class UsuarioController {
     public ResponseEntity<List<UsuarioResponse>> buscarPorOrigem(
 
             @Parameter(
-                    description = "Código da origem do usuário",
+                    description = "Código da origem do usuário. Valores aceitos: 'M' (Magistrado), 'F' (Funcionário), 'T' (Terceirizado), 'A' (Aposentado), 'P' (Pensionista), 'C' (Cotista), 'E' (Externo).",
                     example = "E",
-                    required = true
+                    required = true,
+                    allowEmptyValue = false
             )
             @RequestParam String origem) {
 

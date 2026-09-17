@@ -7,6 +7,10 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Representa um tipo de usuário no sistema, identificado por uma origem (código de um caractere)
+ * e uma descrição textual que define a categoria do usuário.
+ */
 @Entity
 @Table(name = "tipo_usuario")
 @Getter
